@@ -1,0 +1,53 @@
+body {
+  flex-direction: column;
+  background-color: #fafcff;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.loginbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 485px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 50px 80px;
+}
+.logo {
+  width: 145px;
+  margin: 10px;
+  background-color: white;
+  mix-blend-mode: multiply;
+}
+h1 {
+  font: size 30px;
+  font-weight: 700;
+}
+.loginbox input {
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  height: 40px;
+  width: 100%;
+}
+.loginbox input[type="submit"] {
+  padding: 14px 20px;
+}
+.info {
+  font-weight: bold;
+  padding: 15px 0px 5px 0px;
+}
+
+.createAccount, .LogIn {
+    outline:auto
+}
+.input[type="checkbox"]{
+    display: flex;
+}
+.checkbox {
+display: flex;
+
+
+}
