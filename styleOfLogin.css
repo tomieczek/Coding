@@ -10,13 +10,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 485px;
+  width: 340px;
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  padding: 50px 80px;
+  padding: 97px 80.5px 50px 80.5px;
 }
 .logo {
+  padding-top: 25px;
   width: 145px;
   margin: 10px;
   background-color: white;
@@ -26,11 +27,22 @@ h1 {
   font: size 30px;
   font-weight: 700;
 }
-.loginbox input {
+.loginbox input[type="text"],
+input[type="password"] {
   border-radius: 5px;
   border: 1px solid #bfbfbf;
   height: 40px;
   width: 100%;
+}
+
+.loginbox input[type="checkbox"] {
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  width: 45px;
+  height: 30px;
+  margin-right: 12px;
+  align-items: flex-start;
+  margin-left: 2px;
 }
 .createAccount {
   border: none;
@@ -42,6 +54,7 @@ h1 {
   font-family: sans-serif;
   font-style: normal;
   background: #0980cd;
+  border-radius: 5px;
   font-weight: 550;
   font-size: 15px;
   line-height: 14px;
@@ -55,14 +68,21 @@ h1 {
   font-size: 15px;
 }
 
-.createAccount,
-.LogIn {
-  outline: auto;
-}
-
 .business,
 .title {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.checkbox {
+  margin: 25px 0 25px 2px;
+  align-self: flex-start;
+}
+.terms {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.15;
+  word-spacing: 3px;
+  text-align: left;
 }
