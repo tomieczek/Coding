@@ -119,4 +119,22 @@ form {
   display: flex;
   padding: 65px 65px 35px 65px;
 }
+input{
+  position: relative;
+}
+.inputWithButton{
+ 
+  position:relative;
 
+}
+.inputWithButton button{
+  position: absolute;
+  border: none;
+  background: none;
+  right: 10px;
+  top: 10px; 
+}
+.znaky button{
+  border: none;
+  background: none;
+}

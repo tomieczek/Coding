@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login</title>
+    <title>Registration</title>
     <link rel="stylesheet" type="text/css" href="assets/normalize.css" />
+    <!-- normalize preset -->
     <link rel="stylesheet" type="text/css" href="styleOfLogin.css" />
   </head>
   <body>
     <img src="assets/logo.svg" alt="logo" class="logo" />
+    <!-- celkový box -->
     <div class="loginbox">
+      <!-- Znaky jazyku ktere funguji jako button -->
       <div class="znaky">
-        <img src="assets/CZ.svg" alt="cz" />
-        <img src="assets/GB.svg" alt="GB" />
+        <button onclick="toggleLanguage('cz')">
+          <img src="assets/CZ.svg" alt="cz" />
+        </button>
+        <button onclick="toggleLanguage('gb')">
+          <img src="assets/GB.svg" alt="GB" />
+        </button>
       </div>
+      <!-- Formulář -->
       <form>
         <p class="business">Take your business to a next level.</p>
         <h1 class="title">Create a new account.</h1>
@@ -19,10 +27,24 @@
         <input type="text" id="yourName" />
         <label for="email" class="info">Email</label>
         <input type="text" id="email" />
+        <!-- Input box s buttonem oka pro funkci přehozeni typu inputu -->
         <label for="password1" class="info">Password</label>
-        <input type="password" id="password1" />
+        <div class="inputWithButton">
+          <input type="password" id="password1" class="passwordIcon" />
+          <button type="button" onclick="togglePassword('password1')">
+            <img src="assets/akar-icons_eye-open.svg" />
+          </button>
+        </div>
+        <!-- ------------------------------------------------------------ -->
+        <!-- Input box s buttonem oka pro funkci přehozeni typu inputu -->
         <label for="password2" class="info">Confirm password</label>
-        <input type="password" id="password2" />
+        <div class="inputWithButton">
+          <input type="password" id="password2" class="passwordIcon" />
+          <button type="button" onclick="togglePassword('password2')">
+            <img src="assets/akar-icons_eye-open.svg" />
+          </button>
+        </div>
+        <!-- ------------------------------------------------------------ -->
         <div class="checkbox" style="display: flex">
           <input type="checkbox" id="Terms" />
           <label for="Terms" class="terms">
@@ -37,5 +59,6 @@
         <a href="https://cz.pornhub.com/gayporn" class="LogIn">Log in</a>
       </form>
     </div>
+    <script src="./test.js"></script>
   </body>
 </html>
