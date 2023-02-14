@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
     <link rel="stylesheet" type="text/css" href="assets/normalize.css" />
     <!-- normalize preset -->
@@ -19,31 +22,43 @@
           <img src="assets/GB.svg" alt="GB" />
         </button>
       </div>
-      <!-- Formulář -->
+      <!-- Formulář action="/Database.html" method="GET" -->
       <form>
         <p class="business">Take your business to a next level.</p>
         <h1 class="title">Create a new account.</h1>
-        <label for="yourName" class="info">Your name</label>
-        <input type="text" id="yourName" />
-        <label for="email" class="info">Email</label>
-        <input type="text" id="email" />
+        <label for="name" class="info">Your name</label>
+        <input name="name" type="text" id="name" />
+        <label for="email" class="info" required>Email</label>
+        <input name="email" type="text" id="email" />
         <!-- Input box s buttonem oka pro funkci přehozeni typu inputu -->
         <label for="password1" class="info">Password</label>
         <div class="inputWithButton">
-          <input type="password" id="password1" class="passwordIcon" />
+          <input
+            name="password"
+            type="password"
+            id="password1"
+            class="passwordIcon"
+          />
           <button type="button" onclick="togglePassword('password1')">
             <img src="assets/akar-icons_eye-open.svg" />
           </button>
         </div>
+        <div id="errorPassword1"></div>
         <!-- ------------------------------------------------------------ -->
         <!-- Input box s buttonem oka pro funkci přehozeni typu inputu -->
         <label for="password2" class="info">Confirm password</label>
         <div class="inputWithButton">
-          <input type="password" id="password2" class="passwordIcon" />
+          <input
+            name="password"
+            type="password"
+            id="password2"
+            class="passwordIcon"
+          />
           <button type="button" onclick="togglePassword('password2')">
             <img src="assets/akar-icons_eye-open.svg" />
           </button>
         </div>
+        <div id="errorPassword2"></div>
         <!-- ------------------------------------------------------------ -->
         <div class="checkbox" style="display: flex">
           <input type="checkbox" id="Terms" />
