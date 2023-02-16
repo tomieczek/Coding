@@ -24,31 +24,39 @@
         </button>
       </div>
       <!-- Formulář action="/Database.html" method="GET" -->
-      <form>
+      <form id="form">
         <p class="business">Take your business to a next level.</p>
         <h1 class="title">Create a new account.</h1>
-        <label for="name" class="info">Your name</label>
-        <input name="name" type="text" id="name" />
-        <label for="email" class="info" required>Email</label>
-        <input name="email" type="text" id="email" />
+        <div class="input-control">
+          <label for="name" class="info">Your name</label>
+          <input name="name" type="text" id="name" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email" class="info" required>Email</label>
+          <input name="email" type="text" id="email" />
+          <div class="error"></div>
+        </div>
         <!-- Input box s buttonem oka pro funkci přehozeni typu inputu -->
-        <label for="password1" class="info">Password</label>
-        <div class="inputWithButton">
+        <div class="input-control">
+          <label for="password" class="info">Password</label>
+
           <input
             name="password"
             type="password"
-            id="password1"
+            id="password"
             class="passwordIcon"
           />
-          <button type="button" onclick="togglePassword('password1')">
+          <button type="button" onclick="togglePassword('password')">
             <img src="assets/akar-icons_eye-open.svg" />
           </button>
+          <div class="error"></div>
         </div>
-        <div id="errorPassword1"></div>
         <!-- ------------------------------------------------------------ -->
         <!-- Input box s buttonem oka pro funkci přehozeni typu inputu -->
-        <label for="password2" class="info">Confirm password</label>
-        <div class="inputWithButton">
+        <div class="input-control">
+          <label for="password2" class="info">Confirm password</label>
+
           <input
             name="password"
             type="password"
@@ -58,8 +66,9 @@
           <button type="button" onclick="togglePassword('password2')">
             <img src="assets/akar-icons_eye-open.svg" />
           </button>
+
+          <div class="error"></div>
         </div>
-        <div id="errorPassword2"></div>
         <!-- ------------------------------------------------------------ -->
         <div class="checkbox" style="display: flex">
           <input type="checkbox" id="Terms" />
