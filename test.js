@@ -9,7 +9,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   validateInputs();
-
 });
 
 const isValidEmail = (email) => {
@@ -27,11 +26,10 @@ const setError = (element, message) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector(".errorMessage");
 
-  if(errorDisplay){
+  if (errorDisplay) {
     errorDisplay.innerText = message;
   }
   inputControl.classList.add("error");
-  
 };
 const setSuccess = (element, message) => {
   const inputControl = element.parentElement;
@@ -42,8 +40,6 @@ const setSuccess = (element, message) => {
   }
   inputControl.classList.remove("error");
 };
-
-
 
 const validateInputs = () => {
   const usernameValue = username.value.trim();
@@ -87,10 +83,9 @@ const validateInputs = () => {
 
   const errors = form.querySelectorAll(".error");
   if (errors.length === 0) {
-    form.submit(); 
+    form.submit();
   }
 };
-
 
 function toggleLanguage(id) {
   // Changes language to the other one
