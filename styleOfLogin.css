@@ -162,19 +162,10 @@ input{
   border: none;
   background: none;
   right: 0px;
-  top: 43px; 
-  bottom:0px;
- 
+  top: 54px; 
+  
 }
-.error button{
-  position: absolute;
-  border: none;
-  background: none;
-  right: 0px;
-  top: 24px; 
-  bottom:0px;
- 
-}
+
 .znaky button{
   border: none;
   background: none;
