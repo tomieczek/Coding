@@ -149,7 +149,7 @@ form {
   flex-direction: column;
   display: flex;
   width: 325px;
-  padding: 60px 65px 35px 65px;
+  padding: 65px 65px 35px 65px;
 }
 input {
   position: relative;
@@ -176,6 +176,7 @@ input {
   border: none;
   background: none;
   padding: 0px;
+  height: 17px;
 }
 .error input {
   border: 1px solid #cf1322;
