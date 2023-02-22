@@ -163,13 +163,16 @@ input {
   padding-top: 20px;
   position: relative;
 }
-
+.wrap {
+  position:relative;
+}
 .input-control button {
   position: absolute;
   border: none;
   background: none;
   right: 0px;
-  top: 48px;
+  bottom: 5px;
+  
 }
 
 .znaky button {
@@ -185,4 +188,6 @@ input {
   padding-top: 5px;
   color: #cf1322;
 }
-
+button:focus {
+  outline: none;
+}
